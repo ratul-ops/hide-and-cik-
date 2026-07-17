@@ -2,16 +2,21 @@
 <html lang="bn">
 <head>
   <meta charset="UTF-8">
-  <title>Quiz Game</title>
+  <title>Quiz Selector</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Smart ROBARI Quiz</h1>
+  <h1>🎮 কোন গেম খেলতে চাও?</h1>
+  <button onclick="startNormalQuiz()">Normal Quiz</button>
+  <button onclick="startLoveQuiz()">Love Quiz</button>
+
+  <!-- Normal Quiz Container -->
+  <div id="normalQuiz" class="hidden">
+    <h2>Normal Quiz</h2>
     <button id="startBtn">START</button>
     <div id="quizBox" class="hidden">
-      <div id="question"></div>
-      <div id="options"></div>
+      <div id="nQuestion"></div>
+      <div id="nOptions"></div>
       <button id="nextBtn">Next</button>
     </div>
     <div id="resultBox" class="hidden">
@@ -19,6 +24,16 @@
       <button onclick="location.reload()">Play Again</button>
     </div>
   </div>
+
+  <!-- Love Quiz Container -->
+  <div id="loveQuiz" class="hidden">
+    <h2>💗 প্রেম লজিক গেম 💗</h2>
+    <div id="lQuestion"></div>
+    <div id="lOptions"></div>
+    <button onclick="startLoveQuiz()">Restart Love Quiz</button>
+  </div>
+
   <script src="script.js"></script>
+  <script src="loveQuiz.js"></script>
 </body>
 </html>
