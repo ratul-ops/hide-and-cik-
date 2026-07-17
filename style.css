@@ -1,35 +1,16 @@
-body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #00c6ff, #0072ff);
-  color: #fff;
-  text-align: center;
-}
+.hidden { display: none; }
 
-.container {
-  margin: 50px auto;
-  width: 400px;
-  background: rgba(0,0,0,0.6);
+/* Normal Quiz */
+#normalQuiz {
+  background: #7cafcc;
   padding: 20px;
   border-radius: 10px;
-}
-
-button {
-  background: orange;
-  border: none;
-  padding: 10px 20px;
-  margin-top: 15px;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 5px;
-}
-
-.hidden {
-  display: none;
+  margin-top: 20px;
 }
 
 .option {
-  background: #fff;
-  color: #000;
+  background: #ffffff;
+  color: #050101;
   margin: 8px;
   padding: 10px;
   border-radius: 5px;
@@ -37,3 +18,27 @@ button {
 }
 .option.correct { background: green; color: #fff; }
 .option.wrong { background: red; color: #fff; }
+
+/* Love Quiz */
+#loveQuiz {
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.loveOption {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.loveOption:hover {
+  background: #ffeb3b;
+  color: #000;
+}
